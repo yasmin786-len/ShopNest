@@ -57,6 +57,12 @@ npm run dev
 **Customer**
 - Email: `customer@ecommerce.com`
 - Password: `Customer@123`
+**Screenshots**
+   <img width="1366" height="768" alt="Screenshot from 2026-07-01 07-45-10" src="https://github.com/user-attachments/assets/03e31904-5a9e-4a5a-96a8-728402356ff5" />
+  <img width="1366" height="768" alt="Screenshot from 2026-07-01 07-45-35" src="https://github.com/user-attachments/assets/ab81d576-69ba-4645-bb19-b5bcb1633429" />
+
+  
+  
 
 ## 📌 Future Enhancements
 
