@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend build output (already in ecommerce-backend/.gitignore but safe to repeat)
+ecommerce-backend/target/
+
+# Frontend build output and deps (already in ecommerce-frontend/.gitignore)
+ecommerce-frontend/node_modules/
+ecommerce-frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
