@@ -1,0 +1,142 @@
+.order-details-page {
+  padding: var(--space-6) 0 var(--space-9);
+}
+
+.order-details-breadcrumb {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+}
+
+.order-details-breadcrumb a:hover {
+  color: var(--color-indigo-600);
+}
+
+.order-details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.order-details-header h1 {
+  font-size: 1.4rem;
+}
+
+.order-details-header p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.order-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-7);
+  position: relative;
+  padding: 0 var(--space-3);
+}
+
+.order-tracker::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: var(--color-border-strong);
+}
+
+.order-tracker-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  position: relative;
+  flex: 1;
+}
+
+.order-tracker-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-border-strong);
+  border: 3px solid var(--color-surface);
+  position: relative;
+  z-index: 1;
+}
+
+.order-tracker-step.done .order-tracker-dot {
+  background: var(--color-indigo-600);
+}
+
+.order-tracker-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.order-tracker-step.done .order-tracker-label {
+  color: var(--color-indigo-600);
+}
+
+.order-details-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.order-details-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.order-details-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.order-details-item img {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: var(--color-surface-alt);
+}
+
+.order-details-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.order-details-item-meta {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.order-details-address {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .order-details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-tracker {
+    overflow-x: auto;
+  }
+}

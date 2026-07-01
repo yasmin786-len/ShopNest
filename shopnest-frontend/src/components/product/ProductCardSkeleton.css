@@ -1,0 +1,22 @@
+.product-skeleton {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-skeleton-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.product-skeleton-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.product-skeleton-line {
+  height: 14px;
+  border-radius: var(--radius-sm);
+}

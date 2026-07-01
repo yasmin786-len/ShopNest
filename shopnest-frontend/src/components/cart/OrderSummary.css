@@ -1,0 +1,32 @@
+.order-summary {
+  padding: var(--space-5);
+  height: fit-content;
+  position: sticky;
+  top: calc(var(--navbar-height) + var(--space-4));
+}
+
+.order-summary h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-4);
+}
+
+.order-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.order-summary-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-3) 0;
+}
+
+.order-summary-total {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+}

@@ -1,0 +1,126 @@
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-surface-alt);
+}
+
+.admin-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.admin-badge {
+  display: inline-block;
+  margin: var(--space-3) 0 var(--space-6);
+  padding: 4px 10px;
+  background: var(--color-indigo-50);
+  color: var(--color-indigo-600);
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.admin-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 11px 14px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.admin-nav a:hover {
+  background: var(--color-surface-alt);
+  color: var(--color-text-primary);
+}
+
+.admin-nav a.active {
+  background: var(--color-indigo-50);
+  color: var(--color-indigo-600);
+}
+
+.admin-sidebar-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.admin-user-mini {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-user-mini strong {
+  font-size: 0.88rem;
+}
+
+.admin-user-mini span {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.admin-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border: none;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.85rem;
+  justify-content: center;
+}
+
+.admin-content {
+  flex: 1;
+  padding: var(--space-6);
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .admin-shell {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .admin-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
